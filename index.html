@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH - Tube</title>
 
+    
     <!-- daysiUI + tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- script -->
      <script src="./script/catagories.js" defer></script>
      <script src="./script/videos.js" defer></script>
 
-
+     
 </head>
 <body>
     <header>
@@ -50,5 +52,21 @@
                   
         </section>
     </main>
+
+     <!-- Open the modal using ID.showModal() method -->
+            <button class="btn hidden" onclick="customModal.showModal()" id="showModalData"></button>
+            <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                 <div id="modal-content">
+
+                 </div>
+                <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+                </div>
+            </div>
+            </dialog>
 </body>
 </html>
